@@ -37,10 +37,11 @@
 			this.label2 = new System.Windows.Forms.Label();
 			this.comboBox3 = new System.Windows.Forms.ComboBox();
 			this.label4 = new System.Windows.Forms.Label();
-			this.textBox2 = new System.Windows.Forms.TextBox();
 			this.label3 = new System.Windows.Forms.Label();
 			this.buttonEnter = new System.Windows.Forms.Button();
+			this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// pictureBox4
@@ -97,7 +98,7 @@
 			this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.comboBox2.FormattingEnabled = true;
 			this.comboBox2.Items.AddRange(new object[] {
-            "Рубли",
+            "РУБ",
             "Доллары",
             "Евро",
             "Тенге",
@@ -131,8 +132,7 @@
 			this.comboBox3.FormattingEnabled = true;
 			this.comboBox3.Items.AddRange(new object[] {
             "Visa",
-            "Master Card",
-            "Мир"});
+            "MasterCard"});
 			this.comboBox3.Location = new System.Drawing.Point(12, 173);
 			this.comboBox3.Name = "comboBox3";
 			this.comboBox3.Size = new System.Drawing.Size(243, 28);
@@ -147,17 +147,6 @@
 			this.label4.Size = new System.Drawing.Size(241, 13);
 			this.label4.TabIndex = 48;
 			this.label4.Text = "_______________________________________";
-			// 
-			// textBox2
-			// 
-			this.textBox2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-			this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.textBox2.ForeColor = System.Drawing.SystemColors.HotTrack;
-			this.textBox2.Location = new System.Drawing.Point(16, 237);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(241, 19);
-			this.textBox2.TabIndex = 47;
 			// 
 			// label3
 			// 
@@ -184,6 +173,13 @@
 			this.buttonEnter.UseVisualStyleBackColor = false;
 			this.buttonEnter.Click += new System.EventHandler(this.buttonEnter_Click);
 			// 
+			// numericUpDown1
+			// 
+			this.numericUpDown1.Location = new System.Drawing.Point(12, 237);
+			this.numericUpDown1.Name = "numericUpDown1";
+			this.numericUpDown1.Size = new System.Drawing.Size(243, 20);
+			this.numericUpDown1.TabIndex = 51;
+			// 
 			// FormAddCard
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -191,9 +187,9 @@
 			this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
 			this.ClientSize = new System.Drawing.Size(267, 321);
 			this.ControlBox = false;
+			this.Controls.Add(this.numericUpDown1);
 			this.Controls.Add(this.buttonEnter);
 			this.Controls.Add(this.label4);
-			this.Controls.Add(this.textBox2);
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.comboBox3);
@@ -205,7 +201,9 @@
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
 			this.Name = "FormAddCard";
 			this.Load += new System.EventHandler(this.FormAddCard_Load);
+			this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FormAddCard_MouseDown);
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -221,8 +219,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button buttonEnter;
-    }
+		private System.Windows.Forms.NumericUpDown numericUpDown1;
+	}
 }

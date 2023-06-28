@@ -63,13 +63,13 @@ namespace MobileBankSV
                 comboBox1.Select();
                 return;
             }
-            if (!Regex.IsMatch(textBox7.Text, "^(?+.?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*]).{8,}$"))
+            if (!Regex.IsMatch(textBox7.Text, "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d).{8,15}$"))
             {
                 MessageBox.Show("Пожалуйста, введите пароль", caption, btn, ico);
                 textBox7.Select();
                 return;
             }
-            if (!Regex.IsMatch(textBox6.Text, "^(?+.?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*]).{8,}$"))
+            if (!Regex.IsMatch(textBox6.Text, "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d).{8,15}$"))
             {
                 MessageBox.Show("Пожалуйста подтвердите пароль", caption, btn, ico);
                 textBox6.Select();
