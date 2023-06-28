@@ -81,12 +81,7 @@ namespace MobileBankSV
                 double commission = ((Convert.ToDouble(sum) * 2) / 100);
                 double totalSum = commission + Convert.ToDouble(sum);
 
-                if (!Regex.IsMatch(textBox1.Text, "^[0-10]{10}$"))
-                {
-                    MessageBox.Show("Пожалуйста, введите номер телефона", caption, btn, ico);
-                    textBox1.Select();
-                    return;
-                }
+
 
                 var queryCheckCard = $"select bank_card_cvv_code, CONCAT(FORMAT(bank_card_date, '%M'), '/', FORMAT(bank_card_date, '%y')), bank_card_balance, bank_card_currency from bank_card where bank_card_number = '{cardNumber}'";
                 SqlCommand commandCheckCard = new SqlCommand(queryCheckCard, dataBase.getConnection());
@@ -143,7 +138,7 @@ namespace MobileBankSV
                             transactionNumber += Convert.ToString(rand.Next(0, 10));
                         }
 
-                        var queryTransaction1 = $"update bank_card set bank_card_balance = bank_card_balance = '{totalSum}' where bank_card_number = '{cardNumber}'";
+                        var queryTransaction1 = $"update bank_card set bank_card_balance  = '{totalSum}' where bank_card_number = '{cardNumber}'";
                         var queryTransaction2 = $"insert into transactions(transaction_type, transaction_destination, transaction_date, transaction_number,transaction_value,id_bank_card) values ('Пополнение мобильного','+7{textBox1.Text}', '{transactionDate}','{transactionNumber}','{totalSum}',(select id_bank_card from bank_card where bank_card_number = '{cardNumber}'))";
                         var queryTransaction3 = $"update clientServices set serviceBalance = serviceBalance + '{sum}' where serviceName = '{comboBox1.GetItemText(comboBox1.SelectedItem)}' and serviceType = 'Mobile'";
 

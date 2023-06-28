@@ -35,8 +35,7 @@ namespace MobileBankSV
 		public static extern bool ReleaseCapture();
 		private void Credit_Load(object sender, EventArgs e)
 		{
-			textBox1.Text = trackBar1.Value.ToString();
-			textBox2.Text = trackBar2.Value.ToString();
+
 			panel1.Visible = false;
 			buttonEnter.Visible = false;
 
@@ -103,9 +102,8 @@ namespace MobileBankSV
 				while (reader1.Read())
 				{
 					dateRepay = Convert.ToDateTime(reader1[0].ToString());
-					toPaySum = Convert.ToDouble(reader1[1].ToString());
+					 toPaySum = Convert.ToDouble(reader1[1].ToString());
 				}
-
 				reader1.Close();
 				database.closeConnection();
 
@@ -118,9 +116,9 @@ namespace MobileBankSV
 		{
 			double monthlyRate = 0.01;
 			double sum = Convert.ToDouble(textBox1.Text);
-			double numberOfMonths;
+			int numberOfMonths;
 
-			if (double.TryParse(textBox2.Text, out numberOfMonths))
+			if (int.TryParse(textBox2.Text, out numberOfMonths))
 			{
 				double result = sum * (monthlyRate + (monthlyRate / (Math.Pow(1 + monthlyRate, numberOfMonths) - 1)));
 				label19.Text = Math.Round(result, 2).ToString();
@@ -139,32 +137,10 @@ namespace MobileBankSV
 			}
 		}
 
-		private void trackBar1_Scroll(object sender, EventArgs e)
-		{
-			textBox1.Text = trackBar1.Value.ToString();
-		}
-
-		private void textBox1_TextChanged(object sender, EventArgs e)
-		{
-			trackBar1.Value = Convert.ToInt32(textBox1.Text);
-			calculateCredit();
-		}
-
-		private void trackBar2_Scroll(object sender, EventArgs e)
-		{
-			textBox2.Text = trackBar2.Value.ToString();
-		}
-
-		private void textBox2_TextChanged(object sender, EventArgs e)
-		{
-			trackBar2.Value = Convert.ToInt32(textBox2.Text);
-			calculateCredit();
-		}
-
+		
 		private void button1_Click(object sender, EventArgs e)
 		{
-			trackBar1.Value = Convert.ToInt32(textBox1.Text);
-			trackBar2.Value = Convert.ToInt32(textBox2.Text);
+
 			calculateCredit();
 
 			DataStorage.bankCard = DataStorage.cardNumber;

@@ -129,7 +129,7 @@
 			this.textBox1.Name = "textBox1";
 			this.textBox1.Size = new System.Drawing.Size(100, 20);
 			this.textBox1.TabIndex = 71;
-			this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+
 			// 
 			// trackBar1
 			// 
@@ -139,7 +139,7 @@
 			this.trackBar1.Size = new System.Drawing.Size(172, 45);
 			this.trackBar1.TabIndex = 72;
 			this.trackBar1.Value = 5000;
-			this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
+
 			// 
 			// label15
 			// 
@@ -158,7 +158,6 @@
 			this.textBox2.Name = "textBox2";
 			this.textBox2.Size = new System.Drawing.Size(60, 20);
 			this.textBox2.TabIndex = 74;
-			this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
 			// 
 			// trackBar2
 			// 
@@ -167,7 +166,8 @@
 			this.trackBar2.Name = "trackBar2";
 			this.trackBar2.Size = new System.Drawing.Size(104, 45);
 			this.trackBar2.TabIndex = 75;
-			this.trackBar2.Scroll += new System.EventHandler(this.trackBar2_Scroll);
+			this.trackBar2.Value = 6;
+
 			// 
 			// label16
 			// 
@@ -266,7 +266,7 @@
 			this.panel1.Controls.Add(this.label4);
 			this.panel1.Controls.Add(this.label3);
 			this.panel1.Controls.Add(this.label2);
-			this.panel1.Location = new System.Drawing.Point(62, 344);
+			this.panel1.Location = new System.Drawing.Point(22, 119);
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(536, 190);
 			this.panel1.TabIndex = 83;

@@ -25,7 +25,7 @@ namespace MobileBankSV
 		private void buttonEnter_Click(object sender, EventArgs e)
 		{
 			int attempts = 3;
-			int cardPin = Convert.ToInt32(numericUpDown1.Value);
+			int cardPin = Convert.ToInt32(textBox1.Text);
 			int pin = 0;
 
 			var queryCheckPin = $"select bank_card_pin from bank_card where bank_card_number = '{DataStorage.bankCard}'";

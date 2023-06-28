@@ -37,7 +37,7 @@ namespace MobileBankSV
 			var currency = comboBox2.GetItemText(comboBox2.SelectedItem);
 			var paymentSystem = comboBox3.GetItemText(comboBox3.SelectedItem);
 			var cardNumber = "";
-			var cardPin = numericUpDown1.Value;
+			var cardPin = textBox1.Text;
 			var cvvCode = "";
 			bool isCardFree = false;
 			DateTime dateTime = DateTime.Now;

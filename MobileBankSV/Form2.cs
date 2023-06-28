@@ -119,7 +119,7 @@ namespace MobileBankSV
 
                 mySQL += "INSERT INTO client (client_first_name, client_last_name,client_middle_name,client_gender,client_email,client_password,client_phone_number)";
                 mySQL += "VALUES ('" + textBox2.Text + "','" + textBox3.Text + "','" + textBox1.Text + "',";
-                mySQL += "'" + comboBox1.SelectedItem.ToString() + "','" + textBox7.Text + "','" + textBox4.Text + "','" + textBox5.Text + "')";
+                mySQL += "'" + comboBox1.SelectedItem.ToString() + "','" + textBox4.Text + "','" + textBox7.Text + "','" + textBox5.Text + "')";
 
                 database.openConnection();
                 SqlCommand commandAddNewUser = new SqlCommand(mySQL, database.getConnection());

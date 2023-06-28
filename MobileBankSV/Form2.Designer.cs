@@ -37,19 +37,11 @@
 			this.label8 = new System.Windows.Forms.Label();
 			this.buttonEnter = new System.Windows.Forms.Button();
 			this.pictureBox4 = new System.Windows.Forms.PictureBox();
-			this.label6 = new System.Windows.Forms.Label();
 			this.textBox2 = new System.Windows.Forms.TextBox();
-			this.label7 = new System.Windows.Forms.Label();
 			this.textBox3 = new System.Windows.Forms.TextBox();
-			this.label9 = new System.Windows.Forms.Label();
 			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.label10 = new System.Windows.Forms.Label();
-			this.label11 = new System.Windows.Forms.Label();
 			this.textBox4 = new System.Windows.Forms.TextBox();
 			this.comboBox1 = new System.Windows.Forms.ComboBox();
-			this.label12 = new System.Windows.Forms.Label();
-			this.label13 = new System.Windows.Forms.Label();
-			this.label14 = new System.Windows.Forms.Label();
 			this.textBox5 = new System.Windows.Forms.TextBox();
 			this.label15 = new System.Windows.Forms.Label();
 			this.checkBox1 = new System.Windows.Forms.CheckBox();
@@ -57,6 +49,14 @@
 			this.label16 = new System.Windows.Forms.Label();
 			this.textBox7 = new System.Windows.Forms.TextBox();
 			this.label17 = new System.Windows.Forms.Label();
+			this.panel1 = new System.Windows.Forms.Panel();
+			this.panel2 = new System.Windows.Forms.Panel();
+			this.panel3 = new System.Windows.Forms.Panel();
+			this.panel4 = new System.Windows.Forms.Panel();
+			this.panel5 = new System.Windows.Forms.Panel();
+			this.panel6 = new System.Windows.Forms.Panel();
+			this.panel7 = new System.Windows.Forms.Panel();
+			this.panel8 = new System.Windows.Forms.Panel();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -150,102 +150,55 @@
 			this.pictureBox4.TabStop = false;
 			this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
 			// 
-			// label6
-			// 
-			this.label6.AutoSize = true;
-			this.label6.ForeColor = System.Drawing.SystemColors.HotTrack;
-			this.label6.Location = new System.Drawing.Point(9, 88);
-			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(259, 13);
-			this.label6.TabIndex = 47;
-			this.label6.Text = "__________________________________________";
-			// 
 			// textBox2
 			// 
 			this.textBox2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
 			this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.textBox2.ForeColor = System.Drawing.SystemColors.HotTrack;
-			this.textBox2.Location = new System.Drawing.Point(11, 79);
+			this.textBox2.ForeColor = System.Drawing.Color.Black;
+			this.textBox2.Location = new System.Drawing.Point(16, 76);
 			this.textBox2.Name = "textBox2";
 			this.textBox2.Size = new System.Drawing.Size(255, 19);
 			this.textBox2.TabIndex = 46;
-			// 
-			// label7
-			// 
-			this.label7.AutoSize = true;
-			this.label7.ForeColor = System.Drawing.SystemColors.HotTrack;
-			this.label7.Location = new System.Drawing.Point(9, 133);
-			this.label7.Name = "label7";
-			this.label7.Size = new System.Drawing.Size(259, 13);
-			this.label7.TabIndex = 49;
-			this.label7.Text = "__________________________________________";
 			// 
 			// textBox3
 			// 
 			this.textBox3.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
 			this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.textBox3.ForeColor = System.Drawing.SystemColors.HotTrack;
-			this.textBox3.Location = new System.Drawing.Point(11, 124);
+			this.textBox3.ForeColor = System.Drawing.Color.Black;
+			this.textBox3.Location = new System.Drawing.Point(16, 124);
 			this.textBox3.Name = "textBox3";
-			this.textBox3.Size = new System.Drawing.Size(255, 19);
+			this.textBox3.Size = new System.Drawing.Size(250, 19);
 			this.textBox3.TabIndex = 48;
-			// 
-			// label9
-			// 
-			this.label9.AutoSize = true;
-			this.label9.ForeColor = System.Drawing.SystemColors.HotTrack;
-			this.label9.Location = new System.Drawing.Point(9, 178);
-			this.label9.Name = "label9";
-			this.label9.Size = new System.Drawing.Size(259, 13);
-			this.label9.TabIndex = 51;
-			this.label9.Text = "__________________________________________";
 			// 
 			// textBox1
 			// 
 			this.textBox1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
 			this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.textBox1.ForeColor = System.Drawing.SystemColors.HotTrack;
-			this.textBox1.Location = new System.Drawing.Point(11, 169);
+			this.textBox1.ForeColor = System.Drawing.Color.Black;
+			this.textBox1.Location = new System.Drawing.Point(16, 166);
 			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(255, 19);
+			this.textBox1.Size = new System.Drawing.Size(254, 19);
 			this.textBox1.TabIndex = 50;
-			// 
-			// label10
-			// 
-			this.label10.AutoSize = true;
-			this.label10.ForeColor = System.Drawing.SystemColors.HotTrack;
-			this.label10.Location = new System.Drawing.Point(8, 225);
-			this.label10.Name = "label10";
-			this.label10.Size = new System.Drawing.Size(259, 13);
-			this.label10.TabIndex = 53;
-			this.label10.Text = "__________________________________________";
-			// 
-			// label11
-			// 
-			this.label11.AutoSize = true;
-			this.label11.ForeColor = System.Drawing.SystemColors.HotTrack;
-			this.label11.Location = new System.Drawing.Point(9, 272);
-			this.label11.Name = "label11";
-			this.label11.Size = new System.Drawing.Size(259, 13);
-			this.label11.TabIndex = 55;
-			this.label11.Text = "__________________________________________";
 			// 
 			// textBox4
 			// 
 			this.textBox4.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
 			this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.textBox4.ForeColor = System.Drawing.SystemColors.HotTrack;
-			this.textBox4.Location = new System.Drawing.Point(11, 263);
+			this.textBox4.ForeColor = System.Drawing.Color.Black;
+			this.textBox4.Location = new System.Drawing.Point(16, 267);
 			this.textBox4.Name = "textBox4";
-			this.textBox4.Size = new System.Drawing.Size(255, 19);
+			this.textBox4.Size = new System.Drawing.Size(257, 19);
 			this.textBox4.TabIndex = 54;
 			// 
 			// comboBox1
 			// 
+			this.comboBox1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+			this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			this.comboBox1.ForeColor = System.Drawing.Color.Black;
 			this.comboBox1.FormattingEnabled = true;
 			this.comboBox1.Items.AddRange(new object[] {
             "Муж",
@@ -255,45 +208,15 @@
 			this.comboBox1.Size = new System.Drawing.Size(218, 21);
 			this.comboBox1.TabIndex = 56;
 			// 
-			// label12
-			// 
-			this.label12.AutoSize = true;
-			this.label12.ForeColor = System.Drawing.SystemColors.HotTrack;
-			this.label12.Location = new System.Drawing.Point(8, 453);
-			this.label12.Name = "label12";
-			this.label12.Size = new System.Drawing.Size(259, 13);
-			this.label12.TabIndex = 66;
-			this.label12.Text = "__________________________________________";
-			// 
-			// label13
-			// 
-			this.label13.AutoSize = true;
-			this.label13.ForeColor = System.Drawing.SystemColors.HotTrack;
-			this.label13.Location = new System.Drawing.Point(11, 381);
-			this.label13.Name = "label13";
-			this.label13.Size = new System.Drawing.Size(259, 13);
-			this.label13.TabIndex = 65;
-			this.label13.Text = "__________________________________________";
-			// 
-			// label14
-			// 
-			this.label14.AutoSize = true;
-			this.label14.ForeColor = System.Drawing.SystemColors.HotTrack;
-			this.label14.Location = new System.Drawing.Point(10, 329);
-			this.label14.Name = "label14";
-			this.label14.Size = new System.Drawing.Size(259, 13);
-			this.label14.TabIndex = 64;
-			this.label14.Text = "__________________________________________";
-			// 
 			// textBox5
 			// 
 			this.textBox5.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
 			this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.textBox5.ForeColor = System.Drawing.SystemColors.HotTrack;
-			this.textBox5.Location = new System.Drawing.Point(12, 447);
+			this.textBox5.ForeColor = System.Drawing.Color.Black;
+			this.textBox5.Location = new System.Drawing.Point(15, 451);
 			this.textBox5.Name = "textBox5";
-			this.textBox5.Size = new System.Drawing.Size(255, 19);
+			this.textBox5.Size = new System.Drawing.Size(258, 19);
 			this.textBox5.TabIndex = 63;
 			// 
 			// label15
@@ -301,7 +224,7 @@
 			this.label15.AutoSize = true;
 			this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.label15.ForeColor = System.Drawing.SystemColors.HotTrack;
-			this.label15.Location = new System.Drawing.Point(10, 424);
+			this.label15.Location = new System.Drawing.Point(14, 424);
 			this.label15.Name = "label15";
 			this.label15.Size = new System.Drawing.Size(210, 20);
 			this.label15.TabIndex = 62;
@@ -325,10 +248,10 @@
 			this.textBox6.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
 			this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.textBox6.ForeColor = System.Drawing.SystemColors.HotTrack;
-			this.textBox6.Location = new System.Drawing.Point(11, 375);
+			this.textBox6.ForeColor = System.Drawing.Color.Black;
+			this.textBox6.Location = new System.Drawing.Point(16, 372);
 			this.textBox6.Name = "textBox6";
-			this.textBox6.Size = new System.Drawing.Size(255, 19);
+			this.textBox6.Size = new System.Drawing.Size(254, 19);
 			this.textBox6.TabIndex = 60;
 			// 
 			// label16
@@ -336,7 +259,7 @@
 			this.label16.AutoSize = true;
 			this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.label16.ForeColor = System.Drawing.SystemColors.HotTrack;
-			this.label16.Location = new System.Drawing.Point(9, 352);
+			this.label16.Location = new System.Drawing.Point(12, 349);
 			this.label16.Name = "label16";
 			this.label16.Size = new System.Drawing.Size(211, 20);
 			this.label16.TabIndex = 59;
@@ -347,8 +270,8 @@
 			this.textBox7.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
 			this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.textBox7.ForeColor = System.Drawing.SystemColors.HotTrack;
-			this.textBox7.Location = new System.Drawing.Point(12, 320);
+			this.textBox7.ForeColor = System.Drawing.Color.Black;
+			this.textBox7.Location = new System.Drawing.Point(16, 324);
 			this.textBox7.Name = "textBox7";
 			this.textBox7.Size = new System.Drawing.Size(255, 19);
 			this.textBox7.TabIndex = 58;
@@ -364,6 +287,70 @@
 			this.label17.TabIndex = 57;
 			this.label17.Text = "Введите пароль";
 			// 
+			// panel1
+			// 
+			this.panel1.BackColor = System.Drawing.SystemColors.HotTrack;
+			this.panel1.Location = new System.Drawing.Point(16, 97);
+			this.panel1.Name = "panel1";
+			this.panel1.Size = new System.Drawing.Size(257, 1);
+			this.panel1.TabIndex = 67;
+			// 
+			// panel2
+			// 
+			this.panel2.BackColor = System.Drawing.SystemColors.HotTrack;
+			this.panel2.Location = new System.Drawing.Point(16, 146);
+			this.panel2.Name = "panel2";
+			this.panel2.Size = new System.Drawing.Size(257, 1);
+			this.panel2.TabIndex = 43;
+			// 
+			// panel3
+			// 
+			this.panel3.BackColor = System.Drawing.SystemColors.HotTrack;
+			this.panel3.Location = new System.Drawing.Point(16, 187);
+			this.panel3.Name = "panel3";
+			this.panel3.Size = new System.Drawing.Size(257, 1);
+			this.panel3.TabIndex = 43;
+			// 
+			// panel4
+			// 
+			this.panel4.BackColor = System.Drawing.SystemColors.HotTrack;
+			this.panel4.Location = new System.Drawing.Point(15, 238);
+			this.panel4.Name = "panel4";
+			this.panel4.Size = new System.Drawing.Size(257, 1);
+			this.panel4.TabIndex = 43;
+			// 
+			// panel5
+			// 
+			this.panel5.BackColor = System.Drawing.SystemColors.HotTrack;
+			this.panel5.Location = new System.Drawing.Point(16, 288);
+			this.panel5.Name = "panel5";
+			this.panel5.Size = new System.Drawing.Size(257, 1);
+			this.panel5.TabIndex = 43;
+			// 
+			// panel6
+			// 
+			this.panel6.BackColor = System.Drawing.SystemColors.HotTrack;
+			this.panel6.Location = new System.Drawing.Point(15, 345);
+			this.panel6.Name = "panel6";
+			this.panel6.Size = new System.Drawing.Size(257, 1);
+			this.panel6.TabIndex = 43;
+			// 
+			// panel7
+			// 
+			this.panel7.BackColor = System.Drawing.SystemColors.HotTrack;
+			this.panel7.Location = new System.Drawing.Point(18, 393);
+			this.panel7.Name = "panel7";
+			this.panel7.Size = new System.Drawing.Size(257, 1);
+			this.panel7.TabIndex = 43;
+			// 
+			// panel8
+			// 
+			this.panel8.BackColor = System.Drawing.SystemColors.HotTrack;
+			this.panel8.Location = new System.Drawing.Point(18, 472);
+			this.panel8.Name = "panel8";
+			this.panel8.Size = new System.Drawing.Size(257, 1);
+			this.panel8.TabIndex = 43;
+			// 
 			// FormRegister
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -371,9 +358,14 @@
 			this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
 			this.ClientSize = new System.Drawing.Size(281, 556);
 			this.ControlBox = false;
-			this.Controls.Add(this.label12);
-			this.Controls.Add(this.label13);
-			this.Controls.Add(this.label14);
+			this.Controls.Add(this.panel8);
+			this.Controls.Add(this.panel7);
+			this.Controls.Add(this.panel6);
+			this.Controls.Add(this.panel5);
+			this.Controls.Add(this.panel4);
+			this.Controls.Add(this.panel3);
+			this.Controls.Add(this.panel2);
+			this.Controls.Add(this.panel1);
 			this.Controls.Add(this.textBox5);
 			this.Controls.Add(this.label15);
 			this.Controls.Add(this.checkBox1);
@@ -382,14 +374,9 @@
 			this.Controls.Add(this.textBox7);
 			this.Controls.Add(this.label17);
 			this.Controls.Add(this.comboBox1);
-			this.Controls.Add(this.label11);
 			this.Controls.Add(this.textBox4);
-			this.Controls.Add(this.label10);
-			this.Controls.Add(this.label9);
 			this.Controls.Add(this.textBox1);
-			this.Controls.Add(this.label7);
 			this.Controls.Add(this.textBox3);
-			this.Controls.Add(this.label6);
 			this.Controls.Add(this.textBox2);
 			this.Controls.Add(this.pictureBox4);
 			this.Controls.Add(this.buttonEnter);
@@ -418,19 +405,11 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button buttonEnter;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox textBox4;
 		private System.Windows.Forms.ComboBox comboBox1;
-		private System.Windows.Forms.Label label12;
-		private System.Windows.Forms.Label label13;
-		private System.Windows.Forms.Label label14;
 		private System.Windows.Forms.TextBox textBox5;
 		private System.Windows.Forms.Label label15;
 		private System.Windows.Forms.CheckBox checkBox1;
@@ -438,5 +417,13 @@
 		private System.Windows.Forms.Label label16;
 		private System.Windows.Forms.TextBox textBox7;
 		private System.Windows.Forms.Label label17;
+		private System.Windows.Forms.Panel panel1;
+		private System.Windows.Forms.Panel panel2;
+		private System.Windows.Forms.Panel panel3;
+		private System.Windows.Forms.Panel panel4;
+		private System.Windows.Forms.Panel panel5;
+		private System.Windows.Forms.Panel panel6;
+		private System.Windows.Forms.Panel panel7;
+		private System.Windows.Forms.Panel panel8;
 	}
 }

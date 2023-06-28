@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ComunalPay));
 			this.buttonEnter = new System.Windows.Forms.Button();
 			this.panel2 = new System.Windows.Forms.Panel();
 			this.textBox5 = new System.Windows.Forms.TextBox();
@@ -48,7 +49,9 @@
 			this.label3 = new System.Windows.Forms.Label();
 			this.label4 = new System.Windows.Forms.Label();
 			this.label5 = new System.Windows.Forms.Label();
+			this.pictureBox4 = new System.Windows.Forms.PictureBox();
 			this.panel2.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// buttonEnter
@@ -267,6 +270,15 @@
 			this.label5.TabIndex = 78;
 			this.label5.Text = "Личный счет";
 			// 
+			// pictureBox4
+			// 
+			this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+			this.pictureBox4.Location = new System.Drawing.Point(422, 12);
+			this.pictureBox4.Name = "pictureBox4";
+			this.pictureBox4.Size = new System.Drawing.Size(32, 32);
+			this.pictureBox4.TabIndex = 76;
+			this.pictureBox4.TabStop = false;
+			// 
 			// ComunalPay
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -274,6 +286,7 @@
 			this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
 			this.ClientSize = new System.Drawing.Size(466, 450);
 			this.ControlBox = false;
+			this.Controls.Add(this.pictureBox4);
 			this.Controls.Add(this.label5);
 			this.Controls.Add(this.label4);
 			this.Controls.Add(this.label3);
@@ -292,6 +305,7 @@
 			this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ComunalPay_MouseDown);
 			this.panel2.ResumeLayout(false);
 			this.panel2.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -319,5 +333,6 @@
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.Label label5;
+		private System.Windows.Forms.PictureBox pictureBox4;
 	}
 }

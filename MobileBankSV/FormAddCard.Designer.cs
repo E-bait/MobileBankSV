@@ -36,12 +36,10 @@
 			this.comboBox2 = new System.Windows.Forms.ComboBox();
 			this.label2 = new System.Windows.Forms.Label();
 			this.comboBox3 = new System.Windows.Forms.ComboBox();
-			this.label4 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
 			this.buttonEnter = new System.Windows.Forms.Button();
-			this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+			this.textBox1 = new System.Windows.Forms.TextBox();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// pictureBox4
@@ -99,11 +97,8 @@
 			this.comboBox2.FormattingEnabled = true;
 			this.comboBox2.Items.AddRange(new object[] {
             "РУБ",
-            "Доллары",
-            "Евро",
-            "Тенге",
-            "Юани",
-            "Йены"});
+            "USD",
+            "EUR"});
 			this.comboBox2.Location = new System.Drawing.Point(12, 114);
 			this.comboBox2.Name = "comboBox2";
 			this.comboBox2.Size = new System.Drawing.Size(243, 28);
@@ -138,16 +133,6 @@
 			this.comboBox3.Size = new System.Drawing.Size(243, 28);
 			this.comboBox3.TabIndex = 42;
 			// 
-			// label4
-			// 
-			this.label4.AutoSize = true;
-			this.label4.ForeColor = System.Drawing.SystemColors.HotTrack;
-			this.label4.Location = new System.Drawing.Point(14, 246);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(241, 13);
-			this.label4.TabIndex = 48;
-			this.label4.Text = "_______________________________________";
-			// 
 			// label3
 			// 
 			this.label3.AutoSize = true;
@@ -173,12 +158,14 @@
 			this.buttonEnter.UseVisualStyleBackColor = false;
 			this.buttonEnter.Click += new System.EventHandler(this.buttonEnter_Click);
 			// 
-			// numericUpDown1
+			// textBox1
 			// 
-			this.numericUpDown1.Location = new System.Drawing.Point(12, 237);
-			this.numericUpDown1.Name = "numericUpDown1";
-			this.numericUpDown1.Size = new System.Drawing.Size(243, 20);
-			this.numericUpDown1.TabIndex = 51;
+			this.textBox1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+			this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.textBox1.Location = new System.Drawing.Point(12, 236);
+			this.textBox1.Name = "textBox1";
+			this.textBox1.Size = new System.Drawing.Size(238, 20);
+			this.textBox1.TabIndex = 50;
 			// 
 			// FormAddCard
 			// 
@@ -187,9 +174,8 @@
 			this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
 			this.ClientSize = new System.Drawing.Size(267, 321);
 			this.ControlBox = false;
-			this.Controls.Add(this.numericUpDown1);
+			this.Controls.Add(this.textBox1);
 			this.Controls.Add(this.buttonEnter);
-			this.Controls.Add(this.label4);
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.comboBox3);
@@ -203,7 +189,6 @@
 			this.Load += new System.EventHandler(this.FormAddCard_Load);
 			this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FormAddCard_MouseDown);
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -218,9 +203,8 @@
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button buttonEnter;
-		private System.Windows.Forms.NumericUpDown numericUpDown1;
+		private System.Windows.Forms.TextBox textBox1;
 	}
 }

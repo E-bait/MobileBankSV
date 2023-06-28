@@ -161,7 +161,11 @@ namespace MobileBankSV
 
 		private void button2_Click(object sender, EventArgs e)
 		{
-
+			Transaction transaction = new Transaction();
+			DataStorage.bankCard = textBox2.Text;
+			DataStorage.cardNumber = comboBox1.GetItemText(comboBox1.SelectedItem);
+			comboBox1.Text = "";
+			transaction.ShowDialog();
 		}
 
 		private void pictureBox1_Click(object sender, EventArgs e)

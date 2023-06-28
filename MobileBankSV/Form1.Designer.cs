@@ -35,11 +35,11 @@
 			this.buttonEnter = new System.Windows.Forms.Button();
 			this.checkBox1 = new System.Windows.Forms.CheckBox();
 			this.pictureBox4 = new System.Windows.Forms.PictureBox();
-			this.label5 = new System.Windows.Forms.Label();
 			this.textBox2 = new System.Windows.Forms.TextBox();
-			this.label6 = new System.Windows.Forms.Label();
 			this.textBox1 = new System.Windows.Forms.TextBox();
 			this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+			this.panel1 = new System.Windows.Forms.Panel();
+			this.panel2 = new System.Windows.Forms.Panel();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -113,16 +113,6 @@
 			this.pictureBox4.TabStop = false;
 			this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
 			// 
-			// label5
-			// 
-			this.label5.AutoSize = true;
-			this.label5.ForeColor = System.Drawing.SystemColors.HotTrack;
-			this.label5.Location = new System.Drawing.Point(9, 162);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(445, 13);
-			this.label5.TabIndex = 47;
-			this.label5.Text = "_________________________________________________________________________";
-			// 
 			// textBox2
 			// 
 			this.textBox2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
@@ -131,18 +121,9 @@
 			this.textBox2.ForeColor = System.Drawing.SystemColors.HotTrack;
 			this.textBox2.Location = new System.Drawing.Point(11, 153);
 			this.textBox2.Name = "textBox2";
+			this.textBox2.PasswordChar = '*';
 			this.textBox2.Size = new System.Drawing.Size(441, 19);
 			this.textBox2.TabIndex = 46;
-			// 
-			// label6
-			// 
-			this.label6.AutoSize = true;
-			this.label6.ForeColor = System.Drawing.SystemColors.HotTrack;
-			this.label6.Location = new System.Drawing.Point(8, 116);
-			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(445, 13);
-			this.label6.TabIndex = 49;
-			this.label6.Text = "_________________________________________________________________________";
 			// 
 			// textBox1
 			// 
@@ -150,7 +131,7 @@
 			this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.textBox1.ForeColor = System.Drawing.SystemColors.HotTrack;
-			this.textBox1.Location = new System.Drawing.Point(10, 107);
+			this.textBox1.Location = new System.Drawing.Point(10, 104);
 			this.textBox1.Name = "textBox1";
 			this.textBox1.Size = new System.Drawing.Size(441, 19);
 			this.textBox1.TabIndex = 48;
@@ -168,6 +149,22 @@
 			this.linkLabel1.Text = "Нет учетной записи? Создать аккаунт";
 			this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
 			// 
+			// panel1
+			// 
+			this.panel1.BackColor = System.Drawing.SystemColors.HotTrack;
+			this.panel1.Location = new System.Drawing.Point(12, 177);
+			this.panel1.Name = "panel1";
+			this.panel1.Size = new System.Drawing.Size(439, 1);
+			this.panel1.TabIndex = 51;
+			// 
+			// panel2
+			// 
+			this.panel2.BackColor = System.Drawing.SystemColors.HotTrack;
+			this.panel2.Location = new System.Drawing.Point(12, 125);
+			this.panel2.Name = "panel2";
+			this.panel2.Size = new System.Drawing.Size(440, 1);
+			this.panel2.TabIndex = 43;
+			// 
 			// FormLogin
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -175,10 +172,10 @@
 			this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
 			this.ClientSize = new System.Drawing.Size(464, 344);
 			this.ControlBox = false;
+			this.Controls.Add(this.panel2);
+			this.Controls.Add(this.panel1);
 			this.Controls.Add(this.linkLabel1);
-			this.Controls.Add(this.label6);
 			this.Controls.Add(this.textBox1);
-			this.Controls.Add(this.label5);
 			this.Controls.Add(this.textBox2);
 			this.Controls.Add(this.pictureBox4);
 			this.Controls.Add(this.checkBox1);
@@ -204,11 +201,11 @@
         private System.Windows.Forms.Button buttonEnter;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox1;
 		private System.Windows.Forms.LinkLabel linkLabel1;
+		private System.Windows.Forms.Panel panel1;
+		private System.Windows.Forms.Panel panel2;
 	}
 }
 

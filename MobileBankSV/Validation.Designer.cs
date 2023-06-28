@@ -31,10 +31,9 @@
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Validation));
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.label1 = new System.Windows.Forms.Label();
-			this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
 			this.pictureBox4 = new System.Windows.Forms.PictureBox();
 			this.buttonEnter = new System.Windows.Forms.Button();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+			this.textBox1 = new System.Windows.Forms.TextBox();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -55,14 +54,6 @@
 			this.label1.Size = new System.Drawing.Size(145, 20);
 			this.label1.TabIndex = 44;
 			this.label1.Text = "Введите ваш PIN:";
-			// 
-			// numericUpDown1
-			// 
-			this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.numericUpDown1.Location = new System.Drawing.Point(93, 77);
-			this.numericUpDown1.Name = "numericUpDown1";
-			this.numericUpDown1.Size = new System.Drawing.Size(257, 24);
-			this.numericUpDown1.TabIndex = 45;
 			// 
 			// pictureBox4
 			// 
@@ -87,6 +78,15 @@
 			this.buttonEnter.UseVisualStyleBackColor = false;
 			this.buttonEnter.Click += new System.EventHandler(this.buttonEnter_Click);
 			// 
+			// textBox1
+			// 
+			this.textBox1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+			this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.textBox1.Location = new System.Drawing.Point(93, 85);
+			this.textBox1.Name = "textBox1";
+			this.textBox1.Size = new System.Drawing.Size(257, 20);
+			this.textBox1.TabIndex = 48;
+			// 
 			// Validation
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -94,15 +94,14 @@
 			this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
 			this.ClientSize = new System.Drawing.Size(450, 177);
 			this.ControlBox = false;
+			this.Controls.Add(this.textBox1);
 			this.Controls.Add(this.buttonEnter);
 			this.Controls.Add(this.pictureBox4);
-			this.Controls.Add(this.numericUpDown1);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.panel1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.Name = "Validation";
 			this.Text = "Validation";
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
@@ -113,8 +112,8 @@
 
 		private System.Windows.Forms.Panel panel1;
 		private System.Windows.Forms.Label label1;
-		private System.Windows.Forms.NumericUpDown numericUpDown1;
 		private System.Windows.Forms.PictureBox pictureBox4;
 		private System.Windows.Forms.Button buttonEnter;
+		private System.Windows.Forms.TextBox textBox1;
 	}
 }

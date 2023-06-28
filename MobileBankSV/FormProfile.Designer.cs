@@ -105,9 +105,8 @@
 			this.label3.ForeColor = System.Drawing.SystemColors.HotTrack;
 			this.label3.Location = new System.Drawing.Point(12, 144);
 			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(68, 20);
+			this.label3.Size = new System.Drawing.Size(0, 20);
 			this.label3.TabIndex = 50;
-			this.label3.Text = "Пример";
 			// 
 			// label4
 			// 
@@ -116,9 +115,8 @@
 			this.label4.ForeColor = System.Drawing.SystemColors.HotTrack;
 			this.label4.Location = new System.Drawing.Point(12, 203);
 			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(68, 20);
+			this.label4.Size = new System.Drawing.Size(0, 20);
 			this.label4.TabIndex = 51;
-			this.label4.Text = "Пример";
 			// 
 			// label5
 			// 
@@ -127,9 +125,8 @@
 			this.label5.ForeColor = System.Drawing.SystemColors.HotTrack;
 			this.label5.Location = new System.Drawing.Point(12, 264);
 			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(68, 20);
+			this.label5.Size = new System.Drawing.Size(0, 20);
 			this.label5.TabIndex = 53;
-			this.label5.Text = "Пример";
 			// 
 			// label7
 			// 

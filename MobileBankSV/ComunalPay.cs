@@ -56,7 +56,8 @@ namespace MobileBankSV
 				return;
 			}
 
-			var queryCheckCard = $"select bank_card_cvv_code, CONCAT(FORMAT(bank_card_date, '%M', '/', FORMAT(bank_card_date, '%y')), bank_card_balance, bank_card_currency from bank_card where bank_card_number = '{cardNumber}'";
+			var queryCheckCard = $"select bank_card_cvv_code, CONCAT(FORMAT(bank_card_date, 'MMM/yyyy'), bank_card_balance, bank_card_currency) from bank_card where bank_card_number = '{cardNumber}'";
+
 			SqlCommand commandCheckCard = new SqlCommand(queryCheckCard, dataBase.getConnection());
 			dataBase.openConnection();
 			SqlDataReader reader = commandCheckCard.ExecuteReader();
@@ -143,7 +144,7 @@ namespace MobileBankSV
 		{
 			textBox3.Text = DataStorage.cardNumber;
 
-			var queryChooseOperator = $"select id_service, serviceName from clientServices where serviceType = 'comunal'";
+			var queryChooseOperator = $"select id_service, serviceName from clientServices where serviceType = 'communal'";
 			SqlDataAdapter commandChooseOperaot = new SqlDataAdapter(queryChooseOperator, dataBase.getConnection());
 			dataBase.openConnection();
 			commandChooseOperaot.Fill(operators);

@@ -60,7 +60,7 @@ namespace MobileBankSV
 		}
 		private void pictureBox4_Click(object sender, EventArgs e)
 		{
-
+            Close();
 		}
 
 		private void buttonEnter_Click(object sender, EventArgs e)
